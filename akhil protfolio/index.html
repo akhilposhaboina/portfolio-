@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poshaboina Akhil | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .more-skills {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+    }
+    .more-skills.show {
+      max-height: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <a href="#header" class="logo">
+          <img src="images/logo.jpg" alt="Akhil Logo" style="height: 80px;" />
+        </a>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Developer & Data Analyst</p>
+        <h1>Hi, I'm <span>Poshaboina Akhil</span><br>from Hyderabad, India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.jpg" alt="Akhil's photo">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I’m Poshaboina Akhil, a passionate Full Stack Developer and Data Analyst currently pursuing a B.Tech in Information Technology at ACE Engineering College, Hyderabad.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Languages</span><br>Python, Java, C</li>
+              <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+              <li><span>Databases</span><br>MySQL, SQL</li>
+              <li><span>Data Tools</span><br>Excel, Tableau, Jupyter Notebook</li>
+              <li><span>Other</span><br>Git, VS Code</li>
+            </ul>
+
+            <ul id="more-skills" class="more-skills">
+              <li><span>Frameworks</span><br>Spring Boot, React.js</li>
+              <li><span>APIs</span><br>RESTful API Development</li>
+              <li><span>Backend</span><br>Java EE, Node.js (basics)</li>
+              <li><span>Analytics Tools</span><br>Pandas, NumPy, Power BI</li>
+              <li><span>Cloud & DevOps</span><br>GitHub, CI/CD Basics</li>
+            </ul>
+
+            <button id="show-more-btn" class="btn btn2" style="margin-top: 20px;">
+              <span id="btn-icon">➕</span> Show More Skills
+            </button>
+          </div>
+                    <!-- EXPERIENCE TAB -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                          <li><span>2024</span><br>Virtual Internship – Accenture<br>Data analysis and Excel reporting</li>
+                          <li><span>2024</span><br>Virtual Internship – Deloitte<br>Exploratory data analysis and insights</li>
+                          <li><span>2024</span><br>Virtual Internship – Tata Group<br>Dashboards and business interpretation</li>
+                          <li><span>2024</span><br>TCS iON Youth Employment Program<br>Soft skills and communication training</li>
+                        </ul>
+                      </div>
+            
+                      <!-- EDUCATION TAB -->
+                      <div class="tab-contents" id="education">
+                        <ul>
+                          <li><span>2021 - 2025</span><br>B.Tech in Information Technology<br>ACE Engineering College, Hyderabad</li>
+                          <li><span>2019 - 2021</span><br>Intermediate (MPC)<br>Narayana Junior College, Hyderabad</li>
+                          <li><span>2018 - 2019</span><br>SSC<br>Vidya Kiran High School, Hyderabad</li>
+                        </ul>
+                      </div>
+            
+                      <!-- CERTIFICATIONS TAB -->
+                      <div class="tab-contents" id="certifications">
+                        <ul>
+                          <li><span>Python Essentials 1</span><br><a href="https://drive.google.com/file/d/1ITmszEYF7PBP0YJh2ECnoUGyZvWXi1kB/view" target="_blank">View Certificate</a></li>
+                          <li><span>Python Essentials 2</span><br><a href="https://drive.google.com/file/d/1w9gDjfV5QWqpZ06n-PCk8XmWwwmf5fuc/view" target="_blank">View Certificate</a></li>
+                          <li><span>Data Analytics Essentials</span><br><a href="https://drive.google.com/file/d/1CgWiEPT950a_XnZMCqcwqkaryYlkMg05/view" target="_blank">View Certificate</a></li>
+                          <li><span>Deloitte Virtual Internship</span><br><a href="https://drive.google.com/file/d/1bHNxhI8ZivdSYvecL0meBssfKN5BkAuB/view" target="_blank">View Certificate</a></li>
+                          <li><span>Accenture Virtual Internship</span><br><a href="https://drive.google.com/file/d/1WsupX4pCsepTgxZsXH2TInM59pCVvj1s/view" target="_blank">View Certificate</a></li>
+                          <li><span>Tata Group Internship</span><br><a href="https://drive.google.com/file/d/1yxe55f4p1N5KDMtEVG5DH8ASMckicfxT/view" target="_blank">View Certificate</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- SERVICES SECTION -->
+              <div id="services">
+                <div class="container">
+                  <h1 class="sub-title">My Services</h1>
+                  <div class="services-list">
+                    <div>
+                      <i class="fas fa-code"></i>
+                      <h2>Full Stack Web Development</h2>
+                      <p>I design and build responsive, user-friendly web applications using HTML, CSS, Java, and database technologies. From front-end design to back-end logic, I provide end-to-end solutions.</p>
+                    </div>
+                    <div>
+                      <i class="fas fa-chart-line"></i>
+                      <h2>Data Analysis</h2>
+                      <p>I analyze and visualize datasets to find meaningful patterns, trends, and insights using tools like Excel, Tableau, and Python (Jupyter Notebooks).</p>
+                    </div>
+                    <div>
+                      <i class="fas fa-mobile-alt"></i>
+                      <h2>Android App Development</h2>
+                      <p>I build Android applications with clean interfaces and effective functionality, focusing on real-time use cases and smart automation systems.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- PORTFOLIO SECTION -->
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+  
+        <div class="work">
+          <img src="images/work-1.jpg" alt="Intelli Proximity">
+          <div class="layer">
+            <h3>Intelli Proximity</h3>
+            <p>An Android app that detects proximity and promotes eye comfort.</p>
+            <a href="https://drive.google.com/file/d/1ITmszEYF7PBP0YJh2ECnoUGyZvWXi1kB/view" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+  
+        <div class="work">
+          <img src="images/work-2.jpg" alt="Photo Sensitive Detection">
+          <div class="layer">
+            <h3>Photo Sensitive Detection System</h3>
+            <p>Detects sensitive content using ML before uploading images to the cloud.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+  
+        <div class="work">
+          <img src="images/work-3.jpg" alt="Farmers Website">
+          <div class="layer">
+            <h3>Farmers’ Pesticide Awareness Website</h3>
+            <p>Promotes safe pesticide use and eco-friendly agricultural practices.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+  
+      </div>
+      <a href="#" class="btn" style="margin-top: 40px;">See more</a>
+    </div>
+  </div>
+  
+  <!-- CONTACT SECTION -->
+  <div id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact Me</h1>
+      <div class="row">
+        <div class="contact-left">
+          <p><i class="fas fa-paper-plane"></i> akhilyadav6301@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +91 8688864258</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/15C1VUakPW/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/akhilyadav_333" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/Akhilya78826597" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/akhilposhboina333" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/akhilposhaboina" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+          <a href="RESUME.pdf" download class="btn btn2" style="margin-top: 20px;">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <div id="msg"></div>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>Made by Poshaboina Akhil</p>
+  </div>
+  
+  <!-- JAVASCRIPT SECTION -->
+  <script>
+    // Tab switch logic
+    const tabLinks = document.getElementsByClassName("tab-links");
+    const tabContents = document.getElementsByClassName("tab-contents");
+  
+    function opentab(tabname) {
+      for (let link of tabLinks) link.classList.remove("active-link");
+      for (let content of tabContents) content.classList.remove("active-tab");
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  
+    // Show More Skills
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.getElementById('show-more-btn');
+      const skills = document.getElementById('more-skills');
+  
+      btn.addEventListener('click', function () {
+        skills.classList.toggle('show');
+        if (skills.classList.contains('show')) {
+          btn.innerHTML = '<span id="btn-icon">➖</span> Show Less Skills';
+        } else {
+          btn.innerHTML = '<span id="btn-icon">➕</span> Show More Skills';
+        }
+      });
+    });
+  
+    // Contact Form Submission
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHNP7uQJx3THh2J1blrs6td6epoIU8wsPUP8qiBj0UfQv4M0U9Ev-0TFBJNYkcOPUkAQ/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully!";
+          msg.classList.add("show");
+          setTimeout(() => {
+            msg.classList.remove("show");
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+  
+  </body>
+  </html>
+  
+            
